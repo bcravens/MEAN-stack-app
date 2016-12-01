@@ -1,0 +1,19 @@
+body{
+  background-image: url("../images/seigaiha.png");
+  background-attachment: fixed;
+  font-family: helvetica;
+  padding: 40px;
+}
+
+#container {
+  display: flex;
+  justify-content: space-between;
+}
+
+#events {
+  width: 400px;
+}
+
+#event {
+  width: 500px;
+}

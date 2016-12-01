@@ -1,0 +1,46 @@
+[
+  {
+    "author": "Bradley",
+    "host_org": "Startup Central",
+    "event_title": "Virtual Reality: The Final Medium",
+    "date": "30 November, 2016",
+    "time": "7 pm",
+    "location": "Social Tables, 1325 G St NW",
+    "event_url": "https://www.meetup.com/startupscentral/events/235573572/",
+    "description": "A brief history on virtual reality, discussion will cover how brands are leveraging VR to increase customer engagement and the innovative technology powering these virtual reality devices",
+    "category": "Technology"
+  },
+  {
+    "author": "Juliet",
+    "host_org": "Women Who Code",
+    "event_title": "Ruby on Rails for Beginners",
+    "date": "03 December, 2016",
+    "time": "2 pm",
+    "location": "Starbucks cafe in Dupont circle",
+    "event_url": "https://www.meetup.com/Women-Who-Code-DC/events/235224633/",
+    "description": "If you are passionate about learning ROR with fellow awesome women of all learning levels, this event is for you!",
+    "category": "Ruby"
+  },
+  {
+    "author": "Juliet",
+    "host_org": "Women Who Code",
+    "event_title": "Python Beginners Night",
+    "date": "07 December, 2016",
+    "time": "6:30 pm",
+    "location": "Fiscal Note, 1 Thomas Circle",
+    "event_url": "https://www.meetup.com/Women-Who-Code-DC/events/227387935/",
+    "description": "The study group is intended for everyone who wishes to learn more about the Python programming language. Ladies of all skill levels are welcome!",
+    "category": "Python"
+  },
+  {
+    "author": "Bradley",
+    "host_org": "Iron Yard",
+    "event_title": "Free Crash Course: Intro to Java",
+    "date": "05 December, 2016",
+    "time": "6 pm",
+    "location": "The Iron Yard, 1341 G St NW",
+    "event_url": "https://www.meetup.com/The-Iron-Yard-DC/events/235738343/",
+    "description": "This Java course will focus on step by step basics for getting started in the Java language.",
+    "category": "Java"
+  }
+]

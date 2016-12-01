@@ -1,0 +1,34 @@
+<div id="event">
+  <div ng-show = "!showDiv">
+  <h2>{{vm.event.event_title}}</h2>
+  Posted by: {{vm.event.author}}<br/>
+  Host Organization: {{vm.event.host_org}}<br/>
+  Date: {{vm.event.date}}<br/>
+  Time: {{vm.event.time}}<br/>
+  location: {{vm.event.location}}<br/>
+  <a href="{{vm.event.event_url}}" target="_blank">Event Details</a><br/>
+  Description: {{vm.event.description}}<br/>
+  Category: {{vm.event.category}}<br/><br/>
+  <button type="button" ng-click="showDiv = !showDiv">Edit</button>
+  </div>
+
+  <div ng-show = "showDiv">
+
+  <form>
+    <input placeholder="Event Name" data-ng-model="vm.event.event_title">
+    <input placeholder="Poster Name" data-ng-model="vm.event.author">
+    <input placeholder="Host Organization" data-ng-model="vm.event.host_org">
+    <input placeholder="Date" data-ng-model="vm.event.date">
+    <input placeholder="Time" data-ng-model="vm.event.time">
+    <input placeholder="Location" data-ng-model="vm.event.location">
+    <input placeholder="Event Url" data-ng-model="vm.event.event_url">
+    <input placeholder="Description" data-ng-model="vm.event.description">
+    <input placeholder="Category" data-ng-model="vm.event.category">
+
+  <button type="button" data-ng-click="vm.destroy(event) ; showDiv = !showDiv">Delete</button>
+  <button type="button" data-ng-click="vm.update(event); showDiv = !showDiv">Update</button>
+</form>
+
+<button type="button" ng-click="showDiv = !showDiv">Cancel Edit</button>
+</div>
+</div>

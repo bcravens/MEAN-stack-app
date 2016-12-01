@@ -1,0 +1,53 @@
+<html data-ng-app="meetupApp">
+  <head>
+    <title>Angular</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.0-beta.2/angular-resource.min.js"></script>
+
+    <script src="/assets/js/app.js"></script>
+
+    <link rel="stylesheet" href="/assets/css/style.css">
+  </head>
+  <body>
+
+  <div id="container">
+    <main data-ui-view></main>
+
+    <div ng-controller = "IndexController as vm" id="events">
+      <h1>Meetups:</h1>
+        <div ng-show = "!showDiv">
+          <div class ="list" data-ng-repeat="event in vm.events">
+            <p><a data-ui-sref="show({event_title: event.event_title})">{{event.event_title}}</a></p>
+          </div>
+            <button type="button" ng-click="showDiv = !showDiv">Add Meetup</button>
+        </div>
+
+        <div ng-show = "showDiv">
+
+          <form data-ng-submit="vm.create()">
+            <input placeholder="Event Name" data-ng-model="vm.newEvent.event_title">
+            <input placeholder="Poster Name" data-ng-model="vm.newEvent.author">
+            <input placeholder="Host Organization" data-ng-model="vm.newEvent.host_org">
+            <input placeholder="Date" data-ng-model="vm.newEvent.date">
+            <input placeholder="Time" data-ng-model="vm.newEvent.time">
+            <input placeholder="Location" data-ng-model="vm.newEvent.location">
+            <input placeholder="Event Url" data-ng-model="vm.newEvent.event_url">
+            <input placeholder="Description" data-ng-model="vm.newEvent.description">
+            <input placeholder="Category" data-ng-model="vm.newEvent.category">
+            <br/>
+            <button type="submit" ng-click="showDiv = !showDiv">Save New Event</button>
+          </form>
+
+          <button type="button" ng-click="showDiv = !showDiv">Cancel Add</button>
+        </div>
+
+    </div>
+
+  </div>
+
+
+
+
+  </body>
+</html>
